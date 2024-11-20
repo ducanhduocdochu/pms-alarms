@@ -117,308 +117,35 @@ const folderSchema = new Schema(
 - **Params**:
   `folderId`: id thư mục 
 
--- **Body**:
-```json
-{
-    "pageNumber": number,
-    "pageSize": number, 
-
-    "filter": {
-        "dataType": "all", //all or single point or multi point
-        "isOn": "all", //on or off or all
-        "dataFormat": "all" //raw or option or all
-    },
-    "sort": {
-        "alarmName": "asc", //asc or desc
-        "status": "asc", //asc or desc
-        "isOn": "asc" //asc or desc
-    },
-    "search": {
-        // "alarmName": "minh3"
-    }
-}
-```
-
 - **Response**:
 
 ```json
 {
     "folder": {
-        "_id": "673d3b5cef86936629d82ab0",
+        "_id": "673d51e69746e6a3e8e61fd0",
         "owner": {
             "userId": "66addb4c6e3a159dda2f334a",
             "fullName": "Minh",
             "email": "admin@sametel.com.vn",
             "role": "admin",
             "orgIdName": "vienthong-sametel",
-            "_id": "673d3b5cef86936629d82ab1"
+            "_id": "673d51e69746e6a3e8e61fd1"
         },
-        "folderName": "Test ducanh 3",
-        "folderNormailizedName": "test ducanh 3",
+        "folderName": "Test ducanh 4",
+        "folderNormailizedName": "test ducanh 4",
         "items": [
-            "673d3acdef86936629d82a8b",
-            "673d3ad1ef86936629d82a94",
-            "673d3ad4ef86936629d82a9d"
+            "673d51b49746e6a3e8e61fbe",
+            "673d51b89746e6a3e8e61fc7"
         ],
-        "createdAt": "2024-11-20T01:29:00.477Z",
-        "updatedAt": "2024-11-20T01:29:00.477Z",
+        "createdAt": "2024-11-20T03:05:10.492Z",
+        "updatedAt": "2024-11-20T03:05:10.492Z",
         "__v": 0
     },
     "items": [
-        {
-            "activeTime": {
-                "hourRange": {
-                    "start": {
-                        "hour": 7,
-                        "minute": 0
-                    },
-                    "end": {
-                        "hour": 17,
-                        "minute": 30
-                    }
-                },
-                "dateRange": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7
-                ]
-            },
-            "threshold": {
-                "lowAlert": {
-                    "value": 3,
-                    "description": "oh no lowAlert",
-                    "_id": "673d3ad4ef86936629d82aa1"
-                },
-                "lowWarning": {
-                    "value": 4,
-                    "description": "oh no lowWarning",
-                    "_id": "673d3ad4ef86936629d82aa2"
-                },
-                "highWarning": {
-                    "value": 5,
-                    "description": "oh no highWarning",
-                    "_id": "673d3ad4ef86936629d82aa3"
-                },
-                "highAlert": {
-                    "value": 6,
-                    "description": "oh no highWarning",
-                    "_id": "673d3ad4ef86936629d82aa4"
-                }
-            },
-            "_id": "673d3ad4ef86936629d82a9d",
-            "owner": {
-                "userId": "66addb4c6e3a159dda2f334a",
-                "fullName": "Minh",
-                "email": "admin@sametel.com.vn",
-                "role": "admin",
-                "orgIdName": "vienthong-sametel",
-                "_id": "673d3ad4ef86936629d82a9e"
-            },
-            "kpiItem": {
-                "displayName": "vol_SN",
-                "unit": "kW",
-                "formula": null,
-                "isRaw": true,
-                "isConstant": false,
-                "params": [
-                    {
-                        "name": "vol_SN",
-                        "variableName": "",
-                        "deviceName": "H 30",
-                        "deviceType": "E",
-                        "aggregationType": "avg",
-                        "_id": "673d3ad4ef86936629d82aa0"
-                    }
-                ],
-                "interval": 1,
-                "intervalType": "minute",
-                "dateRange": "today",
-                "_id": "673d3ad4ef86936629d82a9f"
-            },
-            "isOn": true,
-            "alarmName": "Test ducanh 6",
-            "alarmNormailizedName": "test ducanh 6",
-            "dataFormat": "raw",
-            "dataType": "accumulated",
-            "createdAt": "2024-11-20T01:26:44.515Z",
-            "updatedAt": "2024-11-20T01:26:44.515Z",
-            "__v": 0,
-            "status": "normal"
-        },
-        {
-            "activeTime": {
-                "hourRange": {
-                    "start": {
-                        "hour": 7,
-                        "minute": 0
-                    },
-                    "end": {
-                        "hour": 17,
-                        "minute": 30
-                    }
-                },
-                "dateRange": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7
-                ]
-            },
-            "threshold": {
-                "lowAlert": {
-                    "value": 3,
-                    "description": "oh no lowAlert",
-                    "_id": "673d3ad1ef86936629d82a98"
-                },
-                "lowWarning": {
-                    "value": 4,
-                    "description": "oh no lowWarning",
-                    "_id": "673d3ad1ef86936629d82a99"
-                },
-                "highWarning": {
-                    "value": 5,
-                    "description": "oh no highWarning",
-                    "_id": "673d3ad1ef86936629d82a9a"
-                },
-                "highAlert": {
-                    "value": 6,
-                    "description": "oh no highWarning",
-                    "_id": "673d3ad1ef86936629d82a9b"
-                }
-            },
-            "_id": "673d3ad1ef86936629d82a94",
-            "owner": {
-                "userId": "66addb4c6e3a159dda2f334a",
-                "fullName": "Minh",
-                "email": "admin@sametel.com.vn",
-                "role": "admin",
-                "orgIdName": "vienthong-sametel",
-                "_id": "673d3ad1ef86936629d82a95"
-            },
-            "kpiItem": {
-                "displayName": "vol_SN",
-                "unit": "kW",
-                "formula": null,
-                "isRaw": true,
-                "isConstant": false,
-                "params": [
-                    {
-                        "name": "vol_SN",
-                        "variableName": "",
-                        "deviceName": "H 30",
-                        "deviceType": "E",
-                        "aggregationType": "avg",
-                        "_id": "673d3ad1ef86936629d82a97"
-                    }
-                ],
-                "interval": 1,
-                "intervalType": "minute",
-                "dateRange": "today",
-                "_id": "673d3ad1ef86936629d82a96"
-            },
-            "isOn": true,
-            "alarmName": "Test ducanh 5",
-            "alarmNormailizedName": "test ducanh 5",
-            "dataFormat": "raw",
-            "dataType": "accumulated",
-            "createdAt": "2024-11-20T01:26:41.180Z",
-            "updatedAt": "2024-11-20T01:26:41.180Z",
-            "__v": 0,
-            "status": "normal"
-        },
-        {
-            "activeTime": {
-                "hourRange": {
-                    "start": {
-                        "hour": 7,
-                        "minute": 0
-                    },
-                    "end": {
-                        "hour": 17,
-                        "minute": 30
-                    }
-                },
-                "dateRange": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7
-                ]
-            },
-            "threshold": {
-                "lowAlert": {
-                    "value": 3,
-                    "description": "oh no lowAlert",
-                    "_id": "673d3acdef86936629d82a8f"
-                },
-                "lowWarning": {
-                    "value": 4,
-                    "description": "oh no lowWarning",
-                    "_id": "673d3acdef86936629d82a90"
-                },
-                "highWarning": {
-                    "value": 5,
-                    "description": "oh no highWarning",
-                    "_id": "673d3acdef86936629d82a91"
-                },
-                "highAlert": {
-                    "value": 6,
-                    "description": "oh no highWarning",
-                    "_id": "673d3acdef86936629d82a92"
-                }
-            },
-            "_id": "673d3acdef86936629d82a8b",
-            "owner": {
-                "userId": "66addb4c6e3a159dda2f334a",
-                "fullName": "Minh",
-                "email": "admin@sametel.com.vn",
-                "role": "admin",
-                "orgIdName": "vienthong-sametel",
-                "_id": "673d3acdef86936629d82a8c"
-            },
-            "kpiItem": {
-                "displayName": "vol_SN",
-                "unit": "kW",
-                "formula": null,
-                "isRaw": true,
-                "isConstant": false,
-                "params": [
-                    {
-                        "name": "vol_SN",
-                        "variableName": "",
-                        "deviceName": "H 30",
-                        "deviceType": "E",
-                        "aggregationType": "avg",
-                        "_id": "673d3acdef86936629d82a8e"
-                    }
-                ],
-                "interval": 1,
-                "intervalType": "minute",
-                "dateRange": "today",
-                "_id": "673d3acdef86936629d82a8d"
-            },
-            "isOn": true,
-            "alarmName": "Test ducanh 4",
-            "alarmNormailizedName": "test ducanh 4",
-            "dataFormat": "raw",
-            "dataType": "accumulated",
-            "createdAt": "2024-11-20T01:26:37.995Z",
-            "updatedAt": "2024-11-20T01:26:37.995Z",
-            "__v": 0,
-            "status": "normal"
-        }
+        "673d51b89746e6a3e8e61fc7",
+        "673d51b49746e6a3e8e61fbe"
     ],
-    "total": 3,
+    "total": 2,
     "page": 1,
     "pageSize": 5
 }
