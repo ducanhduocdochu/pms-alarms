@@ -11,7 +11,7 @@
     - [✏️ PUT /v1/pms/alarms/folder/:folderId](#️-put-v1pmsalarmsfolderfolderid)  
     - [🗑️ DELETE /v1/pms/alarms/folder/:folderId](#️-delete-v1pmsalarmsfolderfolderid)  
     - [🔍 GET /v1/pms/alarms/folder](#-get-v1pmsalarmsfolder)
-    - [🔍 GET /v1/pms/alarms/folder/unSelected](#-get-v1pmsalarmsfolderunselected) 
+    - [🔍 GET /v1/pms/alarms/folder/unSelect](#-get-v1pmsalarmsfolderunselect) 
 ---
 
 ## Schemas
@@ -555,7 +555,7 @@ const folderSchema = new Schema(
 }
 ```
 
-#### 🔍 GET /v1/pms/alarms/folder/unSelected
+#### 🔍 GET /v1/pms/alarms/folder/unSelect
 
 - **Description**: Lấy danh sách các alarm chưa được cho vào folder
 
