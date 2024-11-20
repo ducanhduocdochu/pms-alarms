@@ -10,7 +10,8 @@
     - [➕ POST /v1/pms/alarms/folder/:folderId](#-post-v1pmsalarmsfolderfolderid)  
     - [✏️ PUT /v1/pms/alarms/folder/:folderId](#️-put-v1pmsalarmsfolderfolderid)  
     - [🗑️ DELETE /v1/pms/alarms/folder/:folderId](#️-delete-v1pmsalarmsfolderfolderid)  
-    - [🔍 GET /v1/pms/alarms/folder](#-get-v1pmsalarmsfolder) 
+    - [🔍 GET /v1/pms/alarms/folder](#-get-v1pmsalarmsfolder)
+    - [🔍 GET /v1/pms/alarms/folder/unSelected](#-get-v1pmsalarmsfolderunselected) 
 ---
 
 ## Schemas
@@ -142,6 +143,27 @@ const folderSchema = new Schema(
 
 ```json
 {
+    "folder": {
+        "_id": "673d3b5cef86936629d82ab0",
+        "owner": {
+            "userId": "66addb4c6e3a159dda2f334a",
+            "fullName": "Minh",
+            "email": "admin@sametel.com.vn",
+            "role": "admin",
+            "orgIdName": "vienthong-sametel",
+            "_id": "673d3b5cef86936629d82ab1"
+        },
+        "folderName": "Test ducanh 3",
+        "folderNormailizedName": "test ducanh 3",
+        "items": [
+            "673d3acdef86936629d82a8b",
+            "673d3ad1ef86936629d82a94",
+            "673d3ad4ef86936629d82a9d"
+        ],
+        "createdAt": "2024-11-20T01:29:00.477Z",
+        "updatedAt": "2024-11-20T01:29:00.477Z",
+        "__v": 0
+    },
     "items": [
         {
             "activeTime": {
@@ -169,32 +191,32 @@ const folderSchema = new Schema(
                 "lowAlert": {
                     "value": 3,
                     "description": "oh no lowAlert",
-                    "_id": "673aaf1a3793a1f5095426dd"
+                    "_id": "673d3ad4ef86936629d82aa1"
                 },
                 "lowWarning": {
                     "value": 4,
                     "description": "oh no lowWarning",
-                    "_id": "673aaf1a3793a1f5095426de"
+                    "_id": "673d3ad4ef86936629d82aa2"
                 },
                 "highWarning": {
                     "value": 5,
                     "description": "oh no highWarning",
-                    "_id": "673aaf1a3793a1f5095426df"
+                    "_id": "673d3ad4ef86936629d82aa3"
                 },
                 "highAlert": {
                     "value": 6,
                     "description": "oh no highWarning",
-                    "_id": "673aaf1a3793a1f5095426e0"
+                    "_id": "673d3ad4ef86936629d82aa4"
                 }
             },
-            "_id": "673aaf1a3793a1f5095426d9",
+            "_id": "673d3ad4ef86936629d82a9d",
             "owner": {
                 "userId": "66addb4c6e3a159dda2f334a",
                 "fullName": "Minh",
                 "email": "admin@sametel.com.vn",
                 "role": "admin",
                 "orgIdName": "vienthong-sametel",
-                "_id": "673aaf1a3793a1f5095426da"
+                "_id": "673d3ad4ef86936629d82a9e"
             },
             "kpiItem": {
                 "displayName": "vol_SN",
@@ -209,21 +231,21 @@ const folderSchema = new Schema(
                         "deviceName": "H 30",
                         "deviceType": "E",
                         "aggregationType": "avg",
-                        "_id": "673aaf1a3793a1f5095426dc"
+                        "_id": "673d3ad4ef86936629d82aa0"
                     }
                 ],
                 "interval": 1,
                 "intervalType": "minute",
                 "dateRange": "today",
-                "_id": "673aaf1a3793a1f5095426db"
+                "_id": "673d3ad4ef86936629d82a9f"
             },
             "isOn": true,
-            "alarmName": "Test ducanh 2",
-            "alarmNormailizedName": "test ducanh 2",
+            "alarmName": "Test ducanh 6",
+            "alarmNormailizedName": "test ducanh 6",
             "dataFormat": "raw",
             "dataType": "accumulated",
-            "createdAt": "2024-11-18T03:06:02.358Z",
-            "updatedAt": "2024-11-18T03:06:02.358Z",
+            "createdAt": "2024-11-20T01:26:44.515Z",
+            "updatedAt": "2024-11-20T01:26:44.515Z",
             "__v": 0,
             "status": "normal"
         },
@@ -253,32 +275,32 @@ const folderSchema = new Schema(
                 "lowAlert": {
                     "value": 3,
                     "description": "oh no lowAlert",
-                    "_id": "673aaf083793a1f5095426d4"
+                    "_id": "673d3ad1ef86936629d82a98"
                 },
                 "lowWarning": {
                     "value": 4,
                     "description": "oh no lowWarning",
-                    "_id": "673aaf083793a1f5095426d5"
+                    "_id": "673d3ad1ef86936629d82a99"
                 },
                 "highWarning": {
                     "value": 5,
                     "description": "oh no highWarning",
-                    "_id": "673aaf083793a1f5095426d6"
+                    "_id": "673d3ad1ef86936629d82a9a"
                 },
                 "highAlert": {
                     "value": 6,
                     "description": "oh no highWarning",
-                    "_id": "673aaf083793a1f5095426d7"
+                    "_id": "673d3ad1ef86936629d82a9b"
                 }
             },
-            "_id": "673aaf083793a1f5095426d0",
+            "_id": "673d3ad1ef86936629d82a94",
             "owner": {
                 "userId": "66addb4c6e3a159dda2f334a",
                 "fullName": "Minh",
                 "email": "admin@sametel.com.vn",
                 "role": "admin",
                 "orgIdName": "vienthong-sametel",
-                "_id": "673aaf083793a1f5095426d1"
+                "_id": "673d3ad1ef86936629d82a95"
             },
             "kpiItem": {
                 "displayName": "vol_SN",
@@ -293,26 +315,110 @@ const folderSchema = new Schema(
                         "deviceName": "H 30",
                         "deviceType": "E",
                         "aggregationType": "avg",
-                        "_id": "673aaf083793a1f5095426d3"
+                        "_id": "673d3ad1ef86936629d82a97"
                     }
                 ],
                 "interval": 1,
                 "intervalType": "minute",
                 "dateRange": "today",
-                "_id": "673aaf083793a1f5095426d2"
+                "_id": "673d3ad1ef86936629d82a96"
             },
             "isOn": true,
-            "alarmName": "Test ducanh 1",
-            "alarmNormailizedName": "test ducanh 1",
+            "alarmName": "Test ducanh 5",
+            "alarmNormailizedName": "test ducanh 5",
             "dataFormat": "raw",
             "dataType": "accumulated",
-            "createdAt": "2024-11-18T03:05:44.955Z",
-            "updatedAt": "2024-11-18T03:05:44.955Z",
+            "createdAt": "2024-11-20T01:26:41.180Z",
+            "updatedAt": "2024-11-20T01:26:41.180Z",
+            "__v": 0,
+            "status": "normal"
+        },
+        {
+            "activeTime": {
+                "hourRange": {
+                    "start": {
+                        "hour": 7,
+                        "minute": 0
+                    },
+                    "end": {
+                        "hour": 17,
+                        "minute": 30
+                    }
+                },
+                "dateRange": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7
+                ]
+            },
+            "threshold": {
+                "lowAlert": {
+                    "value": 3,
+                    "description": "oh no lowAlert",
+                    "_id": "673d3acdef86936629d82a8f"
+                },
+                "lowWarning": {
+                    "value": 4,
+                    "description": "oh no lowWarning",
+                    "_id": "673d3acdef86936629d82a90"
+                },
+                "highWarning": {
+                    "value": 5,
+                    "description": "oh no highWarning",
+                    "_id": "673d3acdef86936629d82a91"
+                },
+                "highAlert": {
+                    "value": 6,
+                    "description": "oh no highWarning",
+                    "_id": "673d3acdef86936629d82a92"
+                }
+            },
+            "_id": "673d3acdef86936629d82a8b",
+            "owner": {
+                "userId": "66addb4c6e3a159dda2f334a",
+                "fullName": "Minh",
+                "email": "admin@sametel.com.vn",
+                "role": "admin",
+                "orgIdName": "vienthong-sametel",
+                "_id": "673d3acdef86936629d82a8c"
+            },
+            "kpiItem": {
+                "displayName": "vol_SN",
+                "unit": "kW",
+                "formula": null,
+                "isRaw": true,
+                "isConstant": false,
+                "params": [
+                    {
+                        "name": "vol_SN",
+                        "variableName": "",
+                        "deviceName": "H 30",
+                        "deviceType": "E",
+                        "aggregationType": "avg",
+                        "_id": "673d3acdef86936629d82a8e"
+                    }
+                ],
+                "interval": 1,
+                "intervalType": "minute",
+                "dateRange": "today",
+                "_id": "673d3acdef86936629d82a8d"
+            },
+            "isOn": true,
+            "alarmName": "Test ducanh 4",
+            "alarmNormailizedName": "test ducanh 4",
+            "dataFormat": "raw",
+            "dataType": "accumulated",
+            "createdAt": "2024-11-20T01:26:37.995Z",
+            "updatedAt": "2024-11-20T01:26:37.995Z",
             "__v": 0,
             "status": "normal"
         }
     ],
-    "total": 2,
+    "total": 3,
     "page": 1,
     "pageSize": 5
 }
@@ -446,5 +552,28 @@ const folderSchema = new Schema(
     "total": 1,
     "page": 1,
     "pageSize": 5
+}
+```
+
+#### 🔍 GET /v1/pms/alarms/folder/unSelected
+
+- **Description**: Lấy danh sách các alarm chưa được cho vào folder
+
+- **Response**:
+
+```json
+{
+    "message_en": "Get alarms unselected successfully",
+    "message_vn": "Lấy danh sách cảnh báo không được chọn thành công",
+    "items": [
+        {
+            "_id": "673d3c09c28f81b1bd4a8522",
+            "alarmName": "Test ducanh 7"
+        },
+        {
+            "_id": "673d3c0cc28f81b1bd4a852b",
+            "alarmName": "Test ducanh 8"
+        }
+    ]
 }
 ```
