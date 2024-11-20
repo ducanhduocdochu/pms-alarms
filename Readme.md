@@ -74,9 +74,14 @@ const folderSchema = new Schema(
 {
     "folderName": string, 
     "items": [
-         string,
-         string,
-          ....
+        {
+            "_id": string,
+            "alarmName": string
+        },
+        {
+            "_id":  string,
+            "alarmName":  string
+        }
     ]
 }
 ```
@@ -94,17 +99,23 @@ const folderSchema = new Schema(
             "email": "admin@sametel.com.vn",
             "role": "admin",
             "orgIdName": "vienthong-sametel",
-            "_id": "673ad9863c68d969d4811466"
+            "_id": "673d5bb568baffa9a5b793c0"
         },
-        "folderName": "Test ducanh 7",
-        "folderNormailizedName": "test ducanh 7",
+        "folderName": "Test ducanh 4",
+        "folderNormailizedName": "test ducanh 4",
         "items": [
-            "673aaf083793a1f5095426d0",
-            "673aaf1a3793a1f5095426d9"
+            {
+                "_id": "673d51b89746e6a3e8e61fc7",
+                "alarmName": "Test ducanh 2"
+            },
+            {
+                "_id": "673d51b49746e6a3e8e61fbe",
+                "alarmName": "Test ducanh 1"
+            }
         ],
-        "_id": "673ad9863c68d969d4811465",
-        "createdAt": "2024-11-18T06:07:02.806Z",
-        "updatedAt": "2024-11-18T06:07:02.806Z",
+        "_id": "673d5bb568baffa9a5b793bf",
+        "createdAt": "2024-11-20T03:47:02.000Z",
+        "updatedAt": "2024-11-20T03:47:02.000Z",
         "__v": 0
     }
 }
@@ -164,9 +175,14 @@ const folderSchema = new Schema(
 {
     "folderName": string, 
     "items": [
-        string,
-        string,
-        ...
+        {
+            "_id": string,
+            "alarmName": string
+        },
+        {
+            "_id":  string,
+            "alarmName":  string
+        }
     ]
 }
 ```
